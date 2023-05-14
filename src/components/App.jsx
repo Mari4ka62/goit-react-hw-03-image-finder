@@ -17,6 +17,7 @@ export class App extends Component {
       modalImageUrl,
       showModal: true,
     });
+    console.log(modalImageUrl); //Сюди не доходить адреса зображення
   };
 
   closeModal = () => {

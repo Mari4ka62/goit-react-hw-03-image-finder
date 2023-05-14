@@ -9,7 +9,6 @@ export default class ImageGallery extends Component {
   state = {
     page: 1,
     images: [],
-    urlEl: '',
     isLoading: false,
     modalImageUrl: '',
   };
