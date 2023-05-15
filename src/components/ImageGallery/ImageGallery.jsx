@@ -10,7 +10,6 @@ export default class ImageGallery extends Component {
     page: 1,
     images: [],
     isLoading: false,
-    modalImageUrl: '',
   };
   componentDidUpdate(prevProps, prevState) {
     if (
@@ -41,10 +40,10 @@ export default class ImageGallery extends Component {
       page: this.state.page + 1,
     });
   };
-  handleImgUrl = modalImageUrl => {
-    this.setState({ modalImageUrl });
-    this.props.openModal(this.state.modalImageUrl);
-  };
+  // handleImgUrl = modalImageUrl => {
+  //   this.setState({ modalImageUrl });
+  //   this.props.openModal(this.state.modalImageUrl);
+  // };
   render() {
     return (
       <>
@@ -56,7 +55,7 @@ export default class ImageGallery extends Component {
                 key={id}
                 webformatURL={webformatURL}
                 largeImageURL={largeImageURL}
-                openModal={this.handleImgUrl}
+                openModal={this.props.openModal}
               />
             ))}
         </ul>
