@@ -27,7 +27,7 @@ export default class Modal extends Component {
         onClick={this.handleOverlayClick || this.handleKeyDown}
       >
         <div className="Modal">
-          <img src={this.props.modalImgUrl} alt="" />
+          <img src={this.props.modalImg} alt="" />
         </div>
       </div>
     );

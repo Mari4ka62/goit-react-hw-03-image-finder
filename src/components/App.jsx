@@ -34,7 +34,7 @@ export class App extends Component {
         />
         {this.state.showModal && (
           <Modal
-            modalImageUrl={this.state.modalImageUrl}
+            modalImg={this.state.modalImageUrl}
             closeModal={this.closeModal}
           />
         )}
